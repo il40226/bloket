@@ -1,0 +1,67 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#6ee7b7;
+  --muted:#9aa4b2;
+  --text:#e6eef6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+  background:linear-gradient(180deg,#071227 0%, #0b1a2b 100%);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.container{
+  width:760px;
+  max-width:96%;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.03);
+  padding:20px;
+  border-radius:10px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+}
+
+h1{margin:0 0 12px 0; font-size:20px}
+.panel{background:rgba(255,255,255,0.02); padding:12px; border-radius:8px; margin-bottom:12px}
+.row{display:flex; gap:8px}
+input{
+  padding:8px 10px;
+  border-radius:6px;
+  border:1px solid rgba(255,255,255,0.05);
+  background:rgba(255,255,255,0.02);
+  color:var(--text);
+  flex:1;
+}
+button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:0;
+  background:var(--accent);
+  color:#042018;
+  font-weight:600;
+  cursor:pointer;
+}
+.muted{color:var(--muted); font-size:13px}
+
+.profile-row{display:flex; justify-content:space-between; margin-bottom:12px}
+.packs{margin-top:8px}
+.pack{display:flex; align-items:center; justify-content:space-between; background:rgba(255,255,255,0.01); padding:10px; border-radius:8px}
+.pack-info{display:flex; flex-direction:column}
+.pack-name{font-weight:700}
+.pack-cost{color:var(--muted); font-size:13px}
+
+.collection{margin-top:12px}
+#collection-list{list-style:none; padding:0; margin:0; display:flex; gap:8px; flex-wrap:wrap}
+#collection-list li{background:rgba(255,255,255,0.02); padding:8px 10px; border-radius:8px; font-size:14px}
+
+.message{margin-top:10px; padding:8px; border-radius:6px; background:#1b2733; color:var(--text)}
+.last-drop{margin-top:12px; padding:10px; border-radius:8px; background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+#drop-name{font-weight:700; margin-top:6px}
