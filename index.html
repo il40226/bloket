@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blokett — Pack Opener</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Blokett — Pack Opener</h1>
+
+    <section class="panel" id="auth-panel">
+      <h2>Sign up / Load</h2>
+      <div class="row">
+        <input id="username" placeholder="Enter username" />
+        <button id="btn-register">Register / Load</button>
+      </div>
+      <p class="muted">New accounts receive 1,000,000 trokens.</p>
+    </section>
+
+    <section class="panel" id="profile-panel" hidden>
+      <div class="profile-row">
+        <div>
+          <strong>Username:</strong> <span id="profile-username"></span>
+        </div>
+        <div>
+          <strong>Trokens:</strong> <span id="profile-trokens"></span>
+        </div>
+      </div>
+
+      <div class="packs">
+        <h3>Packs</h3>
+        <div class="pack">
+          <div class="pack-info">
+            <div class="pack-name">Starter Pack</div>
+            <div class="pack-cost">Cost: 1,000 trokens</div>
+          </div>
+          <button id="btn-open-pack">Open Pack</button>
+        </div>
+      </div>
+
+      <div class="collection">
+        <h3>Your Collection</h3>
+        <ul id="collection-list"></ul>
+      </div>
+
+      <div id="last-drop" class="last-drop" hidden>
+        <h4>Last drop</h4>
+        <div id="drop-name"></div>
+      </div>
+    </section>
+
+    <div id="message" class="message" hidden></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
